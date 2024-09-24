@@ -16,7 +16,10 @@ const blogPostSchema = mongoose.Schema({
   postedBy: {
     type: mongoose.Types.ObjectId,
     ref: "User"
-  }
+  },
+  like: [{
+    type: String,
+  }]
 },{
   timestamps: true
 });
